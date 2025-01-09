@@ -1,13 +1,16 @@
 require_relative 'lib/game'
 require_relative 'lib/players'
+require_relative 'lib/board'
 
-board = Array.new(10, '.')
-# board[1] = 'X'
-# board[9] = 'O'
+# board = Array.new(10, '.')
+# # board[1] = 'X'
+# # board[9] = 'O'
 
-(1..3).each do |i|
-  puts "#{board[1 * i]} #{board[2 * i]} #{board[3 * i]}"
-end
+# (1..3).each do |i|
+#   puts "#{board[1 * i]} #{board[2 * i]} #{board[3 * i]}"
+# end
 
 Game.new.introduce
 Player.new.introduce
+board = Board.new()
+board.get_board

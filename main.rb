@@ -10,7 +10,11 @@ require_relative 'lib/board'
 #   puts "#{board[1 * i]} #{board[2 * i]} #{board[3 * i]}"
 # end
 
-Game.new.introduce
-Player.new.introduce
+game = Game.new()
 board = Board.new()
 board.get_board
+name = game.your_name
+p1 = Player.new(name)
+p1.introduce
+p2 = Player.new('Comp')
+p2.introduce

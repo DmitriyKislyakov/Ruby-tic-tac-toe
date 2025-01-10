@@ -10,4 +10,7 @@ board = Array.new(10, '.')
 end
 
 Game.new.introduce
-Player.new.introduce
+p1 = Player.new('Dima')
+p2 = Player.new('Comp')
+
+p1.introduce

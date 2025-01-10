@@ -1,10 +1,10 @@
 class Player
-  def initialize(name, line = [])
+  @@players = 0
+  def initialize(name)
     @name = name
-    @line = line
   end
 
   def introduce
-    puts 'Hello! What is your name?'
+    puts "welcome #{@name}"
   end
 end

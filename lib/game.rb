@@ -4,10 +4,10 @@ class Game
   end
 
   def your_name
-    puts "Enter your name:"
+    puts 'Enter your name:'
     name = gets.chomp
-    if name == ""
-      return "You"
-    end
+    return unless name == ''
+
+    'You'
   end
 end
